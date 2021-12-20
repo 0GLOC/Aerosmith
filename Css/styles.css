@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../multimedia/fondo.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%
+}
+
+.imagen_principal{
+    background-image: url(../multimedia/Portada\ Principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: auto;
+    position: relative;
+}
+
+.titulo_principal{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #2A2928;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+   justify-content: flex-end
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #ADA9A5
+}
+
+.nav_prueba1{
+    width: 100%;
+    background: #2A2928;
+    padding: 10px;
+    display: none;
+}
+
+#btn{
+    display: none;
+}
+
+.checkbtn{
+    display: block;
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    .nav_prueba1{
+        display: block;
+    }
+    .nav_prueba{
+        position: absolute;
+        background: #2A2928;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border: 1px solid #706e6c;
+    }
+
+    #btn:checked ~ .nav_prueba{
+        margin: 0;
+        z-index: 1;
+    }
+}
+
+.box_form{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    background: #2A2928;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 50%;
+    left: 50%
+}
+
+.box_form h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box_form input[type = "text"],.box_form input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ADA9A5;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+
+.box_form input[type = "text"]:focus,.box_form input[type = "password"]:focus{
+    width: 280px;
+    border-color: white;
+}
+
+.box_form input[type ="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ADA9A5;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box_form input[type ="submit"]:hover{
+    background: #ADA9A5;
+}
+
+.box_form input[type ="reset"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ADA9A5;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box_form input[type ="reset"]:hover{
+    background: #ADA9A5;
+}
+
+.page_historia{
+    display: grid;
+    grid-template-columns: 450px auto;
+}
+
+.his2{
+    background: #2A2928;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.history{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    padding: 40px;
+    margin-left: 100px;
+}
+
+.img_history{
+    padding: 20px;
+    border-radius: 40px;
+}
+
+@media (max-width:1500px) and (min-width:741px){
+    .his2 p{
+        overflow: scroll;
+        height: 400px;
+    }
+    .his1{
+        margin-left: 27%;
+    }
+    .img_history{
+        width: 600px;
+        height: auto;
+    }
+    .page_historia{
+        display: flex;
+        flex-direction: column;
+    }
+    .songs_list tr td{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 400px;
+    }
+}
+
+@media (max-width:740px) and (min-width:610px){
+    .history{
+        margin-left: auto;
+    }
+    .his2 p{
+        overflow: scroll;
+        height: 400px;
+    }
+    .his1{
+        margin-left: 6%;
+    }
+    .img_history{
+        width: 600px;
+        height: auto;
+    }
+    .page_historia{
+        display: flex;
+        flex-direction: column;
+    }
+    .songs_list tr td{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 40%;
+    }
+}
+
+@media (max-width:609px) and (min-width:341px){
+    .history{
+        margin-left: auto;
+    }
+    .his2 p{
+        overflow: scroll;
+        height: 400px;
+    }
+    .img_history{
+        width: 400px;
+        height: auto;
+    }
+    .page_historia{
+        display: flex;
+        flex-direction: column;
+    }
+    .songs_list tr td{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:340px){
+    .history{
+        margin-left: auto;
+    }
+    .his2 p{
+        overflow: scroll;
+        height: 400px;
+    }
+    .img_history{
+        width: 300px;
+        height: auto;
+    }
+    .page_historia{
+        display: flex;
+        flex-direction: column;
+    }
+    .canciones_mas_escuchadas{
+        margin: 5px;
+    }
+    .songs_list tr td{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+.title_discografia{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+}
+
+.table_discografia{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 20px auto;
+    border-bottom: solid 5px;
+}
+
+.primera_fila{
+    background-color: #0f0f0f;
+}
+
+.lista_completa{
+    background-color: #2A2928;
+}
+
+.lista_completa:hover{
+    background-color: #3d3c3a;
+}
+
+.canciones_mas_escuchadas{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-decoration-line: underline;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.title_songs_spotify{
+    font-family: sans-serif;
+    color: white;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #2A2928;
+    margin-top: 150px;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    padding: 10px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 300px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #B2ABAB;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #1f1f1d;
+    padding: 8px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.yo:hover{
+    background: #1f1f1d;
+}
+
+.siguenos{
+    margin-left: 50px;
+}
+
+@media (max-width:800px) and (min-width:372px){
+    .pie-pagina .grupo-1{
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (max-width:371px){
+    .pie-pagina .grupo-1{
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        width: 200px;
+    }
+}
+
+.index_grid{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 400px;
+    grid-gap: 80px;
+    margin: 0;
+}
+
+.item1{
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    background-color: #2A2928;
+    padding: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.item2{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20px;
+}
+
+@media (max-width: 1569px){
+    .item1{
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 958px){
+    .index_grid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .item2{
+        margin-top: 2%;
+    }
+
+    .item1{
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .titulo_principal{
+        text-align: center;
+    }
+}
+
+@media (max-width:957px) and (min-width:600px){
+    .video{
+        width: 700px;
+    }
+}
+
+@media (max-width:599px) and (min-width:322){
+    .video{
+        width: 400px;
+    }
+}
+
+@media (max-width:320px){
+    .video{
+        width: 280px;
+        height: 280px;
+    }
+    .item1{
+        overflow: scroll;
+    }
+    .item1{
+        width: auto;
+        height: 500px;
+    }
+}
+
+.galeria{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-gap: 20px;
+}
+
+
+.img {
+    background-color: #2A2928;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.img h2{
+    text-decoration: underline;
+    text-align:center
+}
+
+
+.img1{
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(https://los40es00.epimg.net/los40/imagenes/los40classic/2015/03/steven-tyler1.jpg);
+    background-size: cover;}
+
+.img2{
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(https://rockthebonnie.files.wordpress.com/2017/05/joe-perry.jpg);
+    background-size: cover;
+}
+
+.img3{
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(https://rocktiliano.com/wp-content/uploads/2021/02/brad-whitford-las-vegas-1024x684.jpg);
+    background-size: cover;
+}
+
+.img4{
+    grid-column: 1;
+    grid-row: 4;
+    background-image: url(https://express-images.franklymedia.com/3745/sites/10/2020/01/21140054/GettyImages-145147210.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img5{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.img6{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.img7{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.img8{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+@media (max-width:1688px){
+    .img5{
+        overflow: scroll;
+    }
+    .img6{
+        overflow: scroll;
+    }
+    .img7{
+        overflow: scroll;
+    }
+    .img8{
+        overflow: scroll;
+    }
+}
+
+@media (max-width:925px){
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria .img{
+        height: 300px;
+    }
+    .img5{
+        order: -9;
+    }
+    .img1{
+        order: -10;
+    }
+    .img6{
+        order: -7;
+    }
+    .img2{
+        order: -8;
+    }
+    .img3{
+        order: -6;
+    }
+    .img7{
+        order: -5;
+    }
+    .img4{
+        order: -4;
+    }
+    .img8{
+        order: -3;
+    }
+}
