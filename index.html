@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Aerosmith</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="icon" href="https://www.pnglogos.com/images/other/aerosmith-53000.svg">
     <link rel="stylesheet" href="./Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,21 +15,29 @@
 <body>
     <header>
         <div class="imagen_principal"></div>
-        <nav class="nav_prueba1">
-            <label for="btn" class="checkbtn">
-                <img src="./multimedia/menu.png" height="30px">
-            </label>
-        </nav>
-        <input type="checkbox" id="btn">
-        <nav class="nav_prueba">
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Pages/integrantes.html">Integrantes</a></li>
-                <li><a href="./Pages/discografia.html">Discografía</a></li>
-                <li><a href="./Pages/historia.html">Historia</a></li>
-                <li><a href="./Pages/login.html">Ingresar</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/integrantes.html">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/login.html">Ingresar</a>
+                </li>
+            </div>
+          </nav>
     </header>
     <h1 class="titulo_principal"><b>Aerosmith</b></h1>
     <main>
@@ -36,7 +45,37 @@
             <div class="item item1"><p>Aerosmith es una banda estadounidense de rock formada en Boston en 1970. Sus miembros son: Steven Tyler (cantante), Joe Perry (guitarra), Tom Hamilton (bajo), Joey Kramer (batería) y Brad Whitford (guitarra). Conocidos también como "Los chicos malos de Boston". Su sonido, agresivamente rítmico, tiene raíces en el blues, y contribuyó a establecer el sonido del hard rock y pop rock entre los años 1981 y 1990. Los miembros de Aerosmith han tenido un impacto en muchos fanáticos desde la primera vez que rockearon directamente hasta hoy.Los primeros años la Banda se dio a conocer tocando en diferentes eventos, no rechazaban una sola oportunidad, se presentaron en pequeños locales nocturnos y escuelas, entre otros, cualquier oferta era aceptada, puesto que la banda sabía que para darse a conocer tenía que estar presente no importaba lo poco que pagaran, eran vistos y escuchados por un público. Durante este periodo la Universidad de Boston era su lugar predilecto, se presentaban de forma gratuita cuando las salas de la institución estaban libres de compromisos, la banda era escuchada, sin embargo, no era tomada enserio, para este entonces solo era otra banda de rock. Si tiene una historia que contar, nos encantaría escucharla. Envíe un correo electrónico a nuestro webmaster con la forma en que la banda le ha influido. ¡Revisaremos todos los envíos y publicaremos todo lo que tengamos espacio!</p></div>
             <div class="item item2">
                 <aside>
-                    <iframe width="500" height="400" src="https://www.youtube.com/embed/Qy2OZICSi1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                      
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./multimedia/Segunda Portada Principal.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./multimedia/Tercera Portada Principal.jpg" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./multimedia/Cuarta Portada Principal.jpg" alt="">
+                          </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      
+                      </div>
                 </aside>
             </div>
         </section>
@@ -71,5 +110,8 @@
                 </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

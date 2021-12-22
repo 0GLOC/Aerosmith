@@ -21,6 +21,20 @@ body{
     position: relative;
 }
 
+.navbar{
+    background-color: #2A2928;
+}
+
+.nav-link{
+    color: white !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 10px;
+}
+
+.nav-item:hover{
+    background-color: #3f3e3c;
+}
+
 .titulo_principal{
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
@@ -31,78 +45,8 @@ body{
     margin-bottom: 30px;
 }
 
-.menu{
-    list-style: none;
-    padding: 0;
-    background: #2A2928;
-    width: 100%;
-    max-width: 2000px;
-    margin: auto;
-    display: flex;
-   justify-content: flex-end
-}
-
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: #ADA9A5
-}
-
-.nav_prueba1{
-    width: 100%;
-    background: #2A2928;
-    padding: 10px;
-    display: none;
-}
-
-#btn{
-    display: none;
-}
-
-.checkbtn{
-    display: block;
-    font-size: 30px;
-    color: #fff;
-}
-
-@media (max-width: 768px){
-    .nav_prueba1{
-        display: block;
-    }
-    .nav_prueba{
-        position: absolute;
-        background: #2A2928;
-        width: 70%;
-        margin-left: -70%;
-        transition: all 0.5;
-    }
-
-    .menu{
-        flex-direction: column;
-    }
-
-    .menu li{
-        border: 1px solid #706e6c;
-    }
-
-    #btn:checked ~ .nav_prueba{
-        margin: 0;
-        z-index: 1;
-    }
-}
-
 .box_form{
-    width: 300px;
+    width: 400px;
     padding: 40px;
     position: absolute;
     background: #2A2928;
@@ -115,18 +59,18 @@ body{
 .box_form h1{
     color: white;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .box_form input[type = "text"],.box_form input[type = "password"]{
     border: 0;
     background: none;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     border: 2px solid #ADA9A5;
     padding: 14px 10px;
-    width: 200px;
+    width: 300px;
     outline: none;
     color: white;
     border-radius: 24px;
@@ -142,8 +86,9 @@ body{
 .box_form input[type ="submit"]{
     border: 0;
     background: none;
+    width: 160px;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     border: 2px solid #ADA9A5;
     padding: 14px 40px;
@@ -161,8 +106,9 @@ body{
 .box_form input[type ="reset"]{
     border: 0;
     background: none;
+    width: 160px;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     border: 2px solid #ADA9A5;
     padding: 14px 40px;
@@ -175,6 +121,12 @@ body{
 
 .box_form input[type ="reset"]:hover{
     background: #ADA9A5;
+}
+
+@media (max-width:993px){
+    .box_form{
+        margin-top: 150px;
+    }
 }
 
 .page_historia{
@@ -191,6 +143,7 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
+    
 }
 
 .history{
@@ -203,9 +156,14 @@ body{
     margin-left: 100px;
 }
 
-.img_history{
-    padding: 20px;
-    border-radius: 40px;
+.card-body{
+    background: #2A2928;
+    color: white;
+    border: none;
+}
+
+.card{
+    margin: 20px;
 }
 
 @media (max-width:1500px) and (min-width:741px){
@@ -321,7 +279,6 @@ body{
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 20px auto;
-    border-bottom: solid 5px;
 }
 
 .primera_fila{
@@ -330,6 +287,7 @@ body{
 
 .lista_completa{
     background-color: #2A2928;
+    border-bottom: solid #42403e 3px;
 }
 
 .lista_completa:hover{
@@ -468,6 +426,15 @@ body{
     margin-left: 20px;
 }
 
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel{
+    margin-top: 50px;
+}
+
 @media (max-width: 1569px){
     .item1{
         overflow: scroll;
@@ -494,23 +461,7 @@ body{
     }
 }
 
-@media (max-width:957px) and (min-width:600px){
-    .video{
-        width: 700px;
-    }
-}
-
-@media (max-width:599px) and (min-width:322){
-    .video{
-        width: 400px;
-    }
-}
-
 @media (max-width:320px){
-    .video{
-        width: 280px;
-        height: 280px;
-    }
     .item1{
         overflow: scroll;
     }
@@ -529,7 +480,6 @@ body{
     grid-template-rows: 400px 400px 400px 400px;
     grid-gap: 20px;
 }
-
 
 .img {
     background-color: #2A2928;
@@ -579,6 +529,7 @@ body{
 .img5{
     grid-column: 2;
     grid-row: 1;
+    overflow: scroll;
 }
 
 .img6{
