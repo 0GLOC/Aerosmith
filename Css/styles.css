@@ -478,6 +478,11 @@ body{
     display: grid;
     grid-template-columns: 450px 1fr;
     grid-template-rows: 400px 400px 400px 400px;
+    grid-template-areas: 
+    "steven text1"
+    "joe text2"
+    "brad text3"
+    "joey text4";
     grid-gap: 20px;
 }
 
@@ -502,13 +507,16 @@ body{
     grid-column: 1;
     grid-row: 1;
     background-image: url(https://los40es00.epimg.net/los40/imagenes/los40classic/2015/03/steven-tyler1.jpg);
-    background-size: cover;}
+    background-size: cover;
+    grid-area: steven;
+}
 
 .img2{
     grid-column: 1;
     grid-row: 2;
     background-image: url(https://rockthebonnie.files.wordpress.com/2017/05/joe-perry.jpg);
     background-size: cover;
+    grid-area: joe;
 }
 
 .img3{
@@ -516,6 +524,7 @@ body{
     grid-row: 3;
     background-image: url(https://rocktiliano.com/wp-content/uploads/2021/02/brad-whitford-las-vegas-1024x684.jpg);
     background-size: cover;
+    grid-area: brad;
 }
 
 .img4{
@@ -524,27 +533,33 @@ body{
     background-image: url(https://express-images.franklymedia.com/3745/sites/10/2020/01/21140054/GettyImages-145147210.jpg);
     background-size: cover;
     background-position: center;
+    grid-area: joey;
 }
 
 .img5{
     grid-column: 2;
     grid-row: 1;
     overflow: scroll;
+    overflow-x: hidden;
+    grid-area: text1;
 }
 
 .img6{
     grid-column: 2;
     grid-row: 2;
+    grid-area: text2;
 }
 
 .img7{
     grid-column: 2;
     grid-row: 3;
+    grid-area: text3;
 }
 
 .img8{
     grid-column: 2;
     grid-row: 4;
+    grid-area: text4;
 }
 
 @media (max-width:1688px){
