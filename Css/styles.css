@@ -31,18 +31,8 @@ body{
     margin-right: 10px;
 }
 
-.nav-item:hover{
-    background-color: #3f3e3c;
-}
-
-.titulo_principal{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    text-decoration-line: underline;
-    margin-top: 40px;
-    margin-bottom: 30px;
+.navbar-nav li a:hover{
+    border:1px solid #fff;
 }
 
 .box_form{
@@ -154,12 +144,14 @@ body{
     text-decoration-line: underline;
     padding: 40px;
     margin-left: 100px;
+    text-shadow: 5px 5px 5px black;
 }
 
 .card-body{
     background: #2A2928;
     color: white;
     border: none;
+    text-align: center;
 }
 
 .card{
@@ -267,33 +259,6 @@ body{
     }
 }
 
-.title_discografia{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    text-decoration-line: underline;
-}
-
-.table_discografia{
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 20px auto;
-}
-
-.primera_fila{
-    background-color: #0f0f0f;
-}
-
-.lista_completa{
-    background-color: #2A2928;
-    border-bottom: solid #42403e 3px;
-}
-
-.lista_completa:hover{
-    background-color: #3d3c3a;
-}
-
 .canciones_mas_escuchadas{
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -312,7 +277,6 @@ body{
 .pie-pagina{
     width: 100%;
     background-color: #2A2928;
-    margin-top: 150px;
 }
 
 .pie-pagina .grupo-1{
@@ -376,7 +340,7 @@ body{
     margin-left: 50px;
 }
 
-@media (max-width:800px) and (min-width:372px){
+@media (max-width:950px) and (min-width:372px){
     .pie-pagina .grupo-1{
         width: 70%;
         grid-template-columns: repeat(1, 1fr);
@@ -394,80 +358,6 @@ body{
     }
     .pie-pagina .grupo-1 .box figure img{
         width: 200px;
-    }
-}
-
-.index_grid{
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 500px auto;
-    grid-template-rows: 400px;
-    grid-gap: 80px;
-    margin: 0;
-}
-
-.item1{
-    grid-column: 2;
-    grid-row: 1;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: left;
-    font-size: 20px;
-    background-color: #2A2928;
-    padding: 30px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.item2{
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 20px;
-}
-
-.carousel-inner img{
-    width: 100%;
-    height: 100%;
-}
-
-.carousel{
-    margin-top: 50px;
-}
-
-@media (max-width: 1569px){
-    .item1{
-        overflow: scroll;
-    }
-}
-
-@media (max-width: 958px){
-    .index_grid{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .item2{
-        margin-top: 2%;
-    }
-
-    .item1{
-        text-align: center;
-        margin-left: 20px;
-    }
-
-    .titulo_principal{
-        text-align: center;
-    }
-}
-
-@media (max-width:320px){
-    .item1{
-        overflow: scroll;
-    }
-    .item1{
-        width: auto;
-        height: 500px;
     }
 }
 
@@ -608,5 +498,172 @@ body{
     }
     .img8{
         order: -3;
+    }
+}
+
+.carousel-caption{
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.title-carousel{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.text-carousel{
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+@media (max-width:1250px){
+    .carousel-caption{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:950px){
+    .title-carousel{
+        font-size: 40px;
+    }
+    .text-carousel{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:782px){
+    .title-carousel{
+        font-size: 20px;
+    }
+    .text-carousel{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:518px){
+    .title-carousel{
+        font-size: 10px;
+    }
+    .text-carousel{
+        font-size: 10px;
+    }
+}
+
+.container{
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.img-text{
+    width: 100%;
+    height: 200px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #2A2928;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.img-text h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p{
+    font-size: 14px;
+}
+
+.single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.img-area{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+.img-area img{
+    width: 100%;
+}
+
+.carousel-control-prev{
+    height: 26%;
+    top: 33%;
+    width: 86px;
+}
+
+.carousel-control-next{
+    height: 26%;
+    top: 33%;
+    width: 86px;
+}
+
+@media (max-width:1200px){
+    .img-area{
+        left: 95px;
+    }
+}
+
+@media (max-width:997px){
+    .img-area{
+        left: 55px;
+    }
+    .img-text{
+        height: 300px;
+    }
+    .img-text h2{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:768px){
+    .img-area{
+        left: 180px;
+    }
+    .img-text h2{
+        margin-top: 10px;
+    }
+    .img-area{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:552px){
+    .img-area{
+        left: 110px;
+    }
+    .img-text h2{
+        margin-top: 30px;
+    }
+    .img-area{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:552px){
+    .img-area{
+        left: 80px;
+    }
+    .img-text h2{
+        margin-top: 60px;
+    }
+    .img-area{
+        width: 150px;
+        height: 150px;
     }
 }
