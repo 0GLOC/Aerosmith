@@ -119,11 +119,6 @@ body{
     }
 }
 
-.page_historia{
-    display: grid;
-    grid-template-columns: 450px auto;
-}
-
 .his2{
     background: #2A2928;
     font-family: 'Raleway', sans-serif;
@@ -133,19 +128,12 @@ body{
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
-    
+    height: 550px;
+    overflow: scroll;
+    margin-bottom: 160px;
+    margin-top: 80px;
 }
 
-.history{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    text-decoration-line: underline;
-    padding: 40px;
-    margin-left: 100px;
-    text-shadow: 5px 5px 5px black;
-}
 
 .card-body{
     background: #2A2928;
@@ -155,123 +143,14 @@ body{
 }
 
 .card{
-    margin: 20px;
-}
-
-@media (max-width:1500px) and (min-width:741px){
-    .his2 p{
-        overflow: scroll;
-        height: 400px;
-    }
-    .his1{
-        margin-left: 27%;
-    }
-    .img_history{
-        width: 600px;
-        height: auto;
-    }
-    .page_historia{
-        display: flex;
-        flex-direction: column;
-    }
-    .songs_list tr td{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 400px;
-    }
-}
-
-@media (max-width:740px) and (min-width:610px){
-    .history{
-        margin-left: auto;
-    }
-    .his2 p{
-        overflow: scroll;
-        height: 400px;
-    }
-    .his1{
-        margin-left: 6%;
-    }
-    .img_history{
-        width: 600px;
-        height: auto;
-    }
-    .page_historia{
-        display: flex;
-        flex-direction: column;
-    }
-    .songs_list tr td{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 40%;
-    }
-}
-
-@media (max-width:609px) and (min-width:341px){
-    .history{
-        margin-left: auto;
-    }
-    .his2 p{
-        overflow: scroll;
-        height: 400px;
-    }
-    .img_history{
-        width: 400px;
-        height: auto;
-    }
-    .page_historia{
-        display: flex;
-        flex-direction: column;
-    }
-    .songs_list tr td{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        margin-left: 10%;
-    }
-}
-
-@media (max-width:340px){
-    .history{
-        margin-left: auto;
-    }
-    .his2 p{
-        overflow: scroll;
-        height: 400px;
-    }
-    .img_history{
-        width: 300px;
-        height: auto;
-    }
-    .page_historia{
-        display: flex;
-        flex-direction: column;
-    }
-    .canciones_mas_escuchadas{
-        margin: 5px;
-    }
-    .songs_list tr td{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-}
-
-.canciones_mas_escuchadas{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    text-decoration-line: underline;
     margin-top: 90px;
-    margin-bottom: 30px;
+    margin-left: 40px;
 }
 
-.title_songs_spotify{
-    font-family: sans-serif;
-    color: white;
+@media (max-width:1199px){
+    .card{
+        margin-right: 30px;
+    }
 }
 
 .pie-pagina{
@@ -601,23 +480,71 @@ body{
 
 .carousel-control-prev{
     height: 26%;
-    top: 33%;
-    width: 86px;
+    top: 37%;
+    width: 650px;
 }
 
 .carousel-control-next{
     height: 26%;
-    top: 33%;
-    width: 86px;
+    top: 37%;
+    width: 650px;
 }
 
-@media (max-width:1200px){
-    .img-area{
-        left: 95px;
+.img-text a{
+    position: absolute;
+    left: 125px;
+    background-color: #444241;
+    border: #ADA9A5;
+}
+
+.img-text a:hover{
+    background-color: #7c7474;
+}
+
+@media (max-width:1800px){
+    .carousel-control-prev{
+        height: 26%;
+        top: 33%;
+        width: 86px;
+    }
+    
+    .carousel-control-next{
+        height: 26%;
+        top: 33%;
+        width: 86px;
     }
 }
 
-@media (max-width:997px){
+@media (max-width:1200px){
+    .img-text{
+        height: 300px;
+    }
+    .img-area{
+        left: 95px;
+    }
+    .img-text a{
+        left: 95px;
+    }
+    .carousel-control-prev{
+        height: 26%;
+        top: 33%;
+        width: 86px;
+    }
+    
+    .carousel-control-next{
+        height: 26%;
+        top: 33%;
+        width: 86px;
+    }
+}
+
+@media (max-width:1200px) and (min-width:998px){
+    .arreglo2{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:997px) and (min-width:769px){
     .img-area{
         left: 55px;
     }
@@ -627,11 +554,17 @@ body{
     .img-text h2{
         margin-top: 60px;
     }
+    .img-text a{
+        left: 55px;
+    }
+    .arreglo{
+        margin-bottom: 30px;
+    }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) and (min-width:553px){
     .img-area{
-        left: 180px;
+        left: 185px;
     }
     .img-text h2{
         margin-top: 10px;
@@ -639,6 +572,9 @@ body{
     .img-area{
         width: 150px;
         height: 150px;
+    }
+    .img-text a{
+        left: 205px;
     }
 }
 
@@ -653,11 +589,17 @@ body{
         width: 150px;
         height: 150px;
     }
+    .img-text a{
+        left: 130px;
+    }
 }
 
-@media (max-width:552px){
+@media (max-width:320px){
+    .img-text{
+        height: 300px;
+    }
     .img-area{
-        left: 80px;
+        left: 70px;
     }
     .img-text h2{
         margin-top: 60px;
@@ -665,5 +607,11 @@ body{
     .img-area{
         width: 150px;
         height: 150px;
+    }
+    .img-text a{
+        left: 90px;
+    }
+    .img-text h2{
+        font-size: 20px;
     }
 }
