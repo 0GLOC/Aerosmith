@@ -32,14 +32,18 @@ body{
 }
 
 .navbar-nav li a:hover{
-    border:1px solid #fff;
+    text-shadow: 5px 5px 5px #000;
+    border-bottom: outset;
+    padding: 4px;
 }
+
 
 .box_form{
     width: 400px;
     padding: 40px;
     position: absolute;
     background: #2A2928;
+    text-shadow: 5px 5px 5px black;
     transform: translate(-50%,-50%);
     text-align: center;
     top: 50%;
@@ -132,6 +136,7 @@ body{
     overflow: scroll;
     margin-bottom: 160px;
     margin-top: 80px;
+    overflow-x: hidden;
 }
 
 
@@ -481,13 +486,13 @@ body{
 .carousel-control-prev{
     height: 26%;
     top: 37%;
-    width: 650px;
+    width: 450px;
 }
 
 .carousel-control-next{
     height: 26%;
     top: 37%;
-    width: 650px;
+    width: 450px;
 }
 
 .img-text a{
@@ -614,4 +619,11 @@ body{
     .img-text h2{
         font-size: 20px;
     }
+}
+
+#controles{
+    height: 26%;
+    top: 33%;
+    width: 86px;
+    display: none;
 }
