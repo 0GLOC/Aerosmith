@@ -427,14 +427,6 @@ body{
     }
 }
 
-@media (max-width:518px){
-    .title-carousel{
-        font-size: 10px;
-    }
-    .text-carousel{
-        font-size: 10px;
-    }
-}
 
 .container{
     margin-top: 15%;
@@ -597,6 +589,12 @@ body{
     .img-text a{
         left: 130px;
     }
+    .title-carousel{
+        font-size: 10px;
+    }
+    .text-carousel{
+        font-size: 10px;
+    }
 }
 
 @media (max-width:320px){
@@ -626,4 +624,8 @@ body{
     top: 33%;
     width: 86px;
     display: none;
+}
+
+.navbar-toggler{
+    border: none;
 }
