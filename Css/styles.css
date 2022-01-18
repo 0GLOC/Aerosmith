@@ -10,17 +10,6 @@ body {
   background-size: 100% 100%;
 }
 
-.imagen_principal {
-  background-image: url(../multimedia/Portada\ Principal.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 600px;
-  width: auto;
-  position: relative;
-}
-
 .navbar {
   background-color: #2A2928;
 }
@@ -134,6 +123,7 @@ body {
   margin-bottom: 160px;
   margin-top: 80px;
   overflow-x: hidden;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .card-body {
@@ -146,6 +136,8 @@ body {
 .card {
   margin-top: 90px;
   margin-left: 40px;
+  border: none;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 @media (max-width: 1199px) {
@@ -272,6 +264,7 @@ body {
   background-image: url(https://los40es00.epimg.net/los40/imagenes/los40classic/2015/03/steven-tyler1.jpg);
   background-size: cover;
   grid-area: steven;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img2 {
@@ -280,6 +273,7 @@ body {
   background-image: url(https://rockthebonnie.files.wordpress.com/2017/05/joe-perry.jpg);
   background-size: cover;
   grid-area: joe;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img3 {
@@ -288,6 +282,7 @@ body {
   background-image: url(https://rocktiliano.com/wp-content/uploads/2021/02/brad-whitford-las-vegas-1024x684.jpg);
   background-size: cover;
   grid-area: brad;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img4 {
@@ -297,6 +292,7 @@ body {
   background-size: cover;
   background-position: center;
   grid-area: joey;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img5 {
@@ -305,24 +301,28 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   grid-area: text1;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img6 {
   grid-column: 2;
   grid-row: 2;
   grid-area: text2;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img7 {
   grid-column: 2;
   grid-row: 3;
   grid-area: text3;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 .img8 {
   grid-column: 2;
   grid-row: 4;
   grid-area: text4;
+  box-shadow: 5px 5px 5px #131212;
 }
 
 @media (max-width: 1688px) {

@@ -1,6 +1,26 @@
+@mixin box {
+    border: 0;
+    background: none;
+    width: 160px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid $color2;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+//mixin
+
 $color1:#2A2928;
 
 $color2:#ADA9A5;
+
+$color3:rgb(19, 18, 18);
 
 //variable de colores
 
@@ -13,6 +33,18 @@ $lettergrid:20px;
 
 //variable de fuentes (tamaños)
 
+$headings: (
+    h2:20px,
+    h3:18px,
+    h4:15px,
+);
+
+$h2: map-get($headings, h2);
+$h3: map-get($headings, h3);
+$h4: map-get($headings, h4);
+
+//mapa
+
 
 * {
     margin: 0;
@@ -24,17 +56,6 @@ body{
     background-position: center center;
     background-attachment: fixed;
     background-size: 100% 100%
-}
-
-.imagen_principal{
-    background-image: url(../multimedia/Portada\ Principal.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
-    width: auto;
-    position: relative;
 }
 
 .navbar{
@@ -53,8 +74,7 @@ body{
     padding: 4px;
 }
 
-
-.box_form{
+%boxform {
     width: 400px;
     padding: 40px;
     position: absolute;
@@ -64,6 +84,12 @@ body{
     text-align: center;
     top: 50%;
     left: 50%
+}
+
+//extend
+
+.box_form{
+    @extend %boxform;
 }
 
 .box_form h1{
@@ -94,19 +120,7 @@ body{
 }
 
 .box_form input[type ="submit"]{
-    border: 0;
-    background: none;
-    width: 160px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    border: 2px solid $color2;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
+    @include box;
 }
 
 .box_form input[type ="submit"]:hover{
@@ -114,19 +128,7 @@ body{
 }
 
 .box_form input[type ="reset"]{
-    border: 0;
-    background: none;
-    width: 160px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    border: 2px solid $color2;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
+    @include box;
 }
 
 .box_form input[type ="reset"]:hover{
@@ -144,7 +146,7 @@ body{
     font-family: $font2;
     color: white;
     text-align: left;
-    font-size: 18px;
+    font-size: $h3;
     border-radius: 20px;
     padding: 20px;
     margin: 15px;
@@ -153,6 +155,7 @@ body{
     margin-bottom: 160px;
     margin-top: 80px;
     overflow-x: hidden;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 
@@ -166,6 +169,8 @@ body{
 .card{
     margin-top: 90px;
     margin-left: 40px;
+    border: none;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 @media (max-width:1199px){
@@ -204,7 +209,7 @@ body{
 .pie-pagina .grupo-1 .box h2{
     color: white;
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: $h2;
 }
 
 .pie-pagina .grupo-1 .box p{
@@ -229,7 +234,7 @@ body{
 }
 
 .pie-pagina .grupo-2 small{
-    font-size: 15px;
+    font-size: $h4;
 }
 
 .yo:hover{
@@ -299,6 +304,7 @@ body{
     background-image: url(https://los40es00.epimg.net/los40/imagenes/los40classic/2015/03/steven-tyler1.jpg);
     background-size: cover;
     grid-area: steven;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img2{
@@ -307,6 +313,7 @@ body{
     background-image: url(https://rockthebonnie.files.wordpress.com/2017/05/joe-perry.jpg);
     background-size: cover;
     grid-area: joe;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img3{
@@ -315,6 +322,7 @@ body{
     background-image: url(https://rocktiliano.com/wp-content/uploads/2021/02/brad-whitford-las-vegas-1024x684.jpg);
     background-size: cover;
     grid-area: brad;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img4{
@@ -324,6 +332,7 @@ body{
     background-size: cover;
     background-position: center;
     grid-area: joey;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img5{
@@ -332,24 +341,28 @@ body{
     overflow: scroll;
     overflow-x: hidden;
     grid-area: text1;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img6{
     grid-column: 2;
     grid-row: 2;
     grid-area: text2;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img7{
     grid-column: 2;
     grid-row: 3;
     grid-area: text3;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 .img8{
     grid-column: 2;
     grid-row: 4;
     grid-area: text4;
+    box-shadow: 5px 5px 5px $color3;
 }
 
 @media (max-width:1688px){
