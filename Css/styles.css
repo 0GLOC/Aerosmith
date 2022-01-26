@@ -14,6 +14,14 @@ body {
   background-color: #2A2928;
 }
 
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 .nav-link {
   color: white !important;
   font-family: "Source Sans Pro", sans-serif;
@@ -26,7 +34,7 @@ body {
   padding: 4px;
 }
 
-.box_form {
+.bienvenido, .box_form {
   width: 400px;
   padding: 40px;
   position: absolute;
@@ -104,23 +112,13 @@ body {
   background: #ADA9A5;
 }
 
-.his2 {
-  background: #2A2928;
+#demo {
   font-family: "Raleway", sans-serif;
   color: white;
   text-align: left;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 15px;
-  height: 550px;
-  margin-bottom: 160px;
-  margin-top: 80px;
-  box-shadow: 5px 5px 5px #131212;
-}
-
-.textobanda {
-  padding-top: 30px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .card-body {
@@ -131,10 +129,11 @@ body {
 }
 
 .card {
-  margin-top: 90px;
-  margin-left: 40px;
   border: none;
   box-shadow: 5px 5px 5px #131212;
+  filter: grayscale(60%);
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .pie-pagina {
@@ -203,6 +202,16 @@ body {
   margin-left: 50px;
 }
 
+#titulo-discografia {
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 5px black;
+}
+
 .galeria {
   height: auto;
   width: 100%;
@@ -222,12 +231,13 @@ body {
   text-align: left;
   font-size: 20px;
   padding: 20px;
-  margin-right: 40px;
 }
 
 .img h2 {
   text-decoration: underline;
   text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 5px black;
 }
 
 .img1 {
@@ -235,6 +245,7 @@ body {
   grid-row: 1;
   background-image: url(https://los40es00.epimg.net/los40/imagenes/los40classic/2015/03/steven-tyler1.jpg);
   background-size: cover;
+  filter: grayscale(60%);
   grid-area: steven;
   box-shadow: 5px 5px 5px #131212;
 }
@@ -243,6 +254,7 @@ body {
   grid-column: 1;
   grid-row: 2;
   background-image: url(https://rockthebonnie.files.wordpress.com/2017/05/joe-perry.jpg);
+  filter: grayscale(60%);
   background-size: cover;
   grid-area: joe;
   box-shadow: 5px 5px 5px #131212;
@@ -252,6 +264,7 @@ body {
   grid-column: 1;
   grid-row: 3;
   background-image: url(https://rocktiliano.com/wp-content/uploads/2021/02/brad-whitford-las-vegas-1024x684.jpg);
+  filter: grayscale(60%);
   background-size: cover;
   grid-area: brad;
   box-shadow: 5px 5px 5px #131212;
@@ -261,6 +274,7 @@ body {
   grid-column: 1;
   grid-row: 4;
   background-image: url(https://express-images.franklymedia.com/3745/sites/10/2020/01/21140054/GettyImages-145147210.jpg);
+  filter: grayscale(60%);
   background-size: cover;
   background-position: center;
   grid-area: joey;
@@ -313,7 +327,7 @@ body {
 }
 
 .container {
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -389,8 +403,26 @@ body {
   display: none;
 }
 
-.navbar-toggler {
-  border: none;
+.bienvenido {
+  color: #fff;
+}
+
+.btn-green {
+  border: 0;
+  background: none;
+  width: 160px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #ADA9A5;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1800px) {
@@ -453,15 +485,6 @@ body {
 
   .arreglo2 {
     margin-bottom: 30px;
-  }
-
-  .card {
-    margin-right: 30px;
-  }
-
-  .his2 {
-    overflow: scroll;
-    overflow-x: hidden;
   }
 }
 @media (max-width: 997px) and (min-width: 769px) {
@@ -548,6 +571,11 @@ body {
     margin-top: 10px;
   }
 
+  .img-text {
+    width: 400px;
+    margin-left: 60px;
+  }
+
   .img-area {
     width: 150px;
     height: 150px;
@@ -567,7 +595,12 @@ body {
 }
 @media (max-width: 552px) {
   .img-area {
-    left: 110px;
+    left: 180px;
+  }
+
+  .img-text {
+    width: 300px;
+    margin-left: 110px;
   }
 
   .img-text h2 {
@@ -580,7 +613,7 @@ body {
   }
 
   .img-text a {
-    left: 130px;
+    left: 210px;
   }
 
   .title-carousel {
@@ -602,13 +635,41 @@ body {
     width: 200px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 490px) {
+  .img-area {
+    left: 130px;
+  }
+
   .img-text {
-    height: 300px;
+    width: 230px;
+    height: auto;
+    margin-left: 90px;
+    margin-left: 90px;
+  }
+
+  .img-text h2 {
+    margin-top: 30px;
   }
 
   .img-area {
-    left: 70px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .img-text a {
+    left: 155px;
+  }
+}
+@media (max-width: 390px) {
+  .img-area {
+    left: 90px;
+  }
+
+  .img-text {
+    width: 230px;
+    height: auto;
+    margin-left: 90px;
+    margin-left: 50px;
   }
 
   .img-text h2 {
@@ -621,11 +682,7 @@ body {
   }
 
   .img-text a {
-    left: 90px;
-  }
-
-  .img-text h2 {
-    font-size: 20px;
+    left: 115px;
   }
 }
 
