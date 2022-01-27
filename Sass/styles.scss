@@ -143,6 +143,11 @@ body{
     background: #ADA9A5;
 }
 
+.flechas{
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
 .mejora{
     font-family: $font2;
     color: white;
@@ -157,6 +162,11 @@ body{
     color: white;
     border: none;
     text-align: center;
+}
+
+.card-title{
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px black;
 }
 
 .card{
@@ -458,13 +468,11 @@ body{
         top: 33%;
         width: 86px;
     }
-    
     .carousel-control-next{
         height: 26%;
         top: 33%;
         width: 86px;
     }
-
     .img5{
         overflow: scroll;
     }
@@ -476,6 +484,9 @@ body{
     }
     .img8{
         overflow: scroll;
+    }
+    .flechas{
+        display: none;
     }
 }
 
@@ -589,6 +600,9 @@ body{
     .img-text a{
         left: 205px;
     }
+    #titulo-discografia{
+        display: none;
+    }
     .title-carousel{
         font-size: 20px;
     }
@@ -629,6 +643,9 @@ body{
     }
     .pie-pagina .grupo-1 .box figure img{
         width: 200px;
+    }
+    #titulo-discografia{
+        display: none;
     }
 }
 
